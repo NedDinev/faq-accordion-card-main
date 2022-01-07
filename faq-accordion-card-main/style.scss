@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$Very-dark-desaturated-blue: #1d1e35;
+$Soft-red: #f47c57;
+$Soft-violet: #af67e9;
+$Soft-blue: #6565e7;
+$Very-dark-grayish-blue: #4a4b5e;
+$Dark-grayish-blue: #787887;
+$Light-grayish-blue: #e7e7e9;
+$Card-background: #ffffff;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  background: linear-gradient(
+    to bottom,
+    #af67e9,
+    #9f67e9,
+    #8d66e9,
+    #7a66e8,
+    #6565e7
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 140vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+
+  .cube-img {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    top: 300px;
+    right: 365px;
+    z-index: 3;
+  }
+  .card {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 100%;
+    width: 1000px;
+    height: 400px;
+    background-color: $Card-background;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.3);
+    .FAQ-box {
+      width: 50%;
+      height: 400px;
+      h1 {
+        margin-top: 60px;
+      }
+    }
+  }
+  .woman-img-mobile {
+    display: none;
+  }
+  .bg-pattern-mobile {
+    display: none;
+  }
+  .image-box {
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    .woman-img-desktop {
+      width: 350px;
+      position: relative;
+      top: 65px;
+      right: 56px;
+      z-index: 2;
+    }
+    .bg-pattern-desktop {
+      width: 735px;
+      position: relative;
+      bottom: 494px;
+      right: 425px;
+      z-index: 1;
+    }
+
+    .FAQ-box {
+      width: 50%;
+    }
+  }
+}
+.questions {
+  width: 90%;
+}
+/* Style the Headings that are used to open and close the accordion panel */
+.accordion {
+  color: $Very-dark-grayish-blue;
+
+  cursor: pointer;
+  padding: 12px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Change color of the heading and icon (on hover and click) */
+.active,
+.accordion:hover,
+.accordion:hover::after {
+  color: $Soft-red;
+}
+.active {
+  color: $Very-dark-desaturated-blue;
+  font-weight: 700;
+}
+
+/* Add "plus" sign (+) after Accordion */
+.accordion::after {
+  font-family: "Font Awesome 5 Free";
+
+  content: "\f078";
+  color: $Soft-red;
+  font-weight: bold;
+  float: right;
+}
+
+/* Add "minus" sign (-) after Accordion (when accordion is active) */
+.active::after {
+  font-family: "Font Awesome 5 Free";
+
+  content: "\f077";
+  color: $Soft-red;
+}
+
+/* Style the accordion panel */
+.accordion-panel {
+  padding: 0 18px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  border-bottom: 1px solid $Light-grayish-blue;
+  color: $Dark-grayish-blue;
+}
+.attribution {
+  text-align: center;
+  font-size: 11px;
+}
+.attribution a {
+  color: #dd6e24;
+}

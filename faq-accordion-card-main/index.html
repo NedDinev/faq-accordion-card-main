@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <img
+        src="./images/illustration-woman-online-mobile.svg"
+        alt="woman-mobile"
+        class="woman-img-mobile"
+      />
+      <img
+        src="./images/bg-pattern-mobile.svg"
+        alt="bacground-pattern-mobile"
+        class="bg-pattern-mobile"
+      />
+      <img
+        class="cube-img"
+        src="./images/illustration-box-desktop.svg"
+        alt="cube-img"
+      />
+      <div class="card">
+        <div class="image-box">
+          <img
+            class="woman-img-desktop"
+            src="./images/illustration-woman-online-desktop.svg"
+            alt="woman-desktop"
+          />
+
+          <img
+            class="bg-pattern-desktop"
+            src="./images/bg-pattern-desktop.svg"
+            alt="bacground-pattern-desktop"
+          />
+        </div>
+        <div class="FAQ-box">
+          <h1>FAQ</h1>
+          <div class="questions">
+            <h2 class="accordion">How many team members can I invite?</h2>
+            <div class="accordion-panel">
+              <p>
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+
+            <h2 class="accordion active">
+              What is the maximum file upload size?
+            </h2>
+            <div class="accordion-panel" style="max-height: 54px">
+              <p>
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+
+            <h2 class="accordion">How do I reset my password?</h2>
+            <div class="accordion-panel">
+              <p>
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </div>
+
+            <h2 class="accordion">Can I cancel my subscription?</h2>
+            <div class="accordion-panel">
+              <p>
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </div>
+
+            <h2 class="accordion">Do you provide additional support?</h2>
+            <div class="accordion-panel">
+              <p>
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/NedDinev">NedDinev</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
